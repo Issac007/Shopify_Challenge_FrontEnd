@@ -16,7 +16,7 @@ $( document ).ready(function() {
                 html ='<div class="gallery"><img src="'+element[10]+'" alt="Cinque Terre" width="600" height="400"><div class="desc">'+element[1]+' <button id='+element[0]+' onClick="updateLike(this)">Like</button></div></div>';
                 if(likedItems!=null){
                 if(likedItems.includes(element[0])){
-                html ='<div class="gallery"><img src="'+element[10]+'" alt="Cinque Terre" width="600" height="400"><div class="desc">'+element[1]+' <button style="background-color:blue;color:white" id='+element[0]+' onClick="updateLike(this)">Like</button></div></div>';
+                html ='<div class="gallery"><img src="'+element[10]+'" alt="Cinque Terre" width="600" height="400"><div class="desc">'+element[1]+' <button style="background-color:blue;color:white" id='+element[0]+' onClick="updateLike(this)">Unlike</button></div></div>';
                 }
               }
                 $(".container").append(html);
@@ -51,7 +51,7 @@ $( document ).ready(function() {
         html ='<div class="gallery"><img src="'+element[10]+'" alt="Cinque Terre" width="600" height="400"><div class="desc">'+element[1]+' <button id='+element[0]+' onClick="updateLike(this)">Like</button></div></div>';
         if(likedItems!=null){
         if(likedItems.includes(element[0])){
-        html ='<div class="gallery"><img src="'+element[10]+'" alt="Cinque Terre" width="600" height="400"><div class="desc">'+element[1]+' <button style="background-color:blue;color:white" id='+element[0]+' onClick="updateLike(this)">Like</button></div></div>';
+        html ='<div class="gallery"><img src="'+element[10]+'" alt="Cinque Terre" width="600" height="400"><div class="desc">'+element[1]+' <button style="background-color:blue;color:white" id='+element[0]+' onClick="updateLike(this)">Unlike</button></div></div>';
         }} 
         $(".container").append(html);
     });
